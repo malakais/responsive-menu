@@ -28,19 +28,31 @@
 <body>
 
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
-        <li>
-          <a href="../join/">Join</a>
-        </li>
-        <li>
-          <a class="dead-link">Donate</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-menu">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../join/">Join</a>
+          </li>
+          <li>
+            <a class="dead-link">Donate</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <svg viewbox="0 0 60 60">
+          <line x1="5px" y1="15px" x2="55px" y2="15px" />
+          <line x1="5px" y1="30px" x2="55px" y2="30px" />
+          <line x1="15px" y1="30px" x2="45px" y2="30px" />
+          <line x1="15px" y1="30px" x2="45px" y2="30px" />
+          <line x1="5px" y1="45px" x2="55px" y2="45px" />
+        </svg>
+
+      </div>
+    </div>
   </header>
 
   <main>
@@ -48,6 +60,14 @@
     <p>@kaistephens</p>
     <img class="svg-wrap" src="../images/money-sign.svg" alt="giant eyeball staring at a person">
   </main>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
 </body>
+
 
 </html>
