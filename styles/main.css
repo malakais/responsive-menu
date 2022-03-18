@@ -325,9 +325,18 @@ picture img {
   width: 100%;
 }
 
-a:link {
+/* a:link {
   color: var(--earth-blue);
   font-weight: bold;
+  text-decoration: none;
+} */
+
+body:not(.main-page) .main-nav a {
+  text-shadow: none;
+  color: var(--main-color-dark);
+}
+
+a {
   text-decoration: none;
 }
 
